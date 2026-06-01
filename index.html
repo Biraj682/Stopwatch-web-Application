@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch-wrapper">
+            <!-- Stopwatch Display -->
+            <div class="stopwatch-display">
+                <div class="time-display">
+                    <div class="time-segment">
+                        <span id="minutes" class="time-value">00</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-segment">
+                        <span id="seconds" class="time-value">00</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                    <div class="time-separator">:</div>
+                    <div class="time-segment">
+                        <span id="milliseconds" class="time-value">00</span>
+                        <span class="time-label">Centiseconds</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Control Panel -->
+            <div class="control-panel">
+                <button id="startBtn" class="btn btn-start">Start</button>
+                <button id="pauseBtn" class="btn btn-pause">Pause</button>
+                <button id="resetBtn" class="btn btn-reset">Reset</button>
+                <button id="lapBtn" class="btn btn-lap">Lap</button>
+            </div>
+
+            <!-- Lap Times Section -->
+            <div class="laps-section">
+                <h2>Lap Times</h2>
+                <div class="laps-container">
+                    <ul id="lapsList" class="laps-list">
+                        <!-- Lap times will be dynamically added here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
